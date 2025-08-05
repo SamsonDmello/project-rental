@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Wooden Arch Backdrop",
+    "description": "Elegant wooden arch backdrop perfect for weddings, anniversaries, and photo shoots. Comes with adjustable height and width to fit various venues.",
+    "price": "Contact us for pricing",
+    "images": ["images/wooden-arch-1.jpg"],
+    "videos": [],
+    "reviews": []
+  },
+  {
+    "id": 2,
+    "name": "Flower Box Welcome Sign",
+    "description": "Charming flower box sign to welcome guests with a personal message. Includes customizable lettering and fresh floral arrangements.",
+    "price": "Contact us for pricing",
+    "images": ["images/flower-box-sign-1.jpg"],
+    "videos": [],
+    "reviews": []
+  }
+]

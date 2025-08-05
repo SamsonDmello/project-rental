@@ -1,0 +1,265 @@
+/* Import fancy Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Party-inspired palette for a fun, celebratory look */
+  --primary-color: #6c5b7b;    /* rich, muted purple for headers and footers */
+  --secondary-color: #c06c84;  /* rosy pink for buttons and highlights */
+  --accent-color: #f8b195;     /* warm peach for backgrounds and accents */
+  --highlight-color: #355c7d;  /* deep blue accent for hover states */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background: #ffffff;
+}
+
+/* Fancy serif headings for a celebratory feel */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header .tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  gap: 15px;
+}
+
+nav a {
+  color: #fdfdfd;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+.hero {
+  position: relative;
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(108, 91, 123, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-content h2 {
+  margin: 0 0 10px 0;
+  font-size: 2.2rem;
+}
+
+.hero-content p {
+  margin: 0 0 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.4s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, var(--highlight-color), var(--secondary-color));
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 10px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+
+.product-card p {
+  margin: 0 10px 10px 10px;
+  flex-grow: 1;
+}
+
+.product-card a {
+  margin: 10px;
+  align-self: flex-start;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img, .gallery video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(45deg, var(--secondary-color), var(--accent-color));
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.4s ease;
+}
+
+form button:hover {
+  background: linear-gradient(45deg, var(--highlight-color), var(--secondary-color));
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+}
+
+.review-list li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Contact info styles */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero {
+    height: 250px;
+  }
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+}
